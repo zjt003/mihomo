@@ -63,7 +63,7 @@ const config = {
       "+.lan",
       "+.local",
       "time.*.com",
-      "ntp.*.com",
+      "ntp.*.com"，
       "connect.rom.miui.com",
       "+.miwifi.com",
       "+.ntp.org",
@@ -78,7 +78,7 @@ const config = {
       // Windows
       "time.windows.com",
       "+.msftconnecttest.com",
-      "+.msftncsi.com",
+      "+.msftncsi.com"，
       "+.wpsmail.net",
       "+.henzanapp.com",
       "+.pconline.com.cn"
@@ -183,7 +183,7 @@ const config = {
     },
     {
       name: "Telegram",
-      ...pr,
+      ...pr，
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Telegram.png"
     },
     {
@@ -313,7 +313,7 @@ const config = {
     },
     {
       name: "台湾自动选择",
-      type: "url-test",
+      输入: "url-test",
       "include-all": true,
       filter: "(?i)(?!直连)(台|tw|taiwan)",
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"
@@ -348,7 +348,6 @@ const config = {
     }
   ],
   rules: [
-    "DOMAIN-SUFFIX,xbiquzw.net,DIRECT",
     "GEOSITE,category-ads-all,REJECT",
     "RULE-SET,anti-AD,REJECT",
     "RULE-SET,秋风广告规则,REJECT",
