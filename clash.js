@@ -38,9 +38,9 @@ const config = {
   "proxy-providers": {
     "润": {
       ...p,
-      url: ""， // 请在此处填写订阅链接
+      url: "", // 请在此处填写订阅链接
       override: { "additional-suffix": "[run]" }// 覆盖节点内容(additional-suffix在节点名称后增加固定后缀 additional-prefix在节点名称前增加固定前缀)
-    },
+    }
   },
   ipv6: true,
   "allow-lan": false,
@@ -163,7 +163,7 @@ const config = {
   "proxy-groups": [
     {
       name: "默认",
-      输入: "select",
+      type: "select",
       proxies: [
         "自动选择", "直连", "香港", "香港自动选择", "台湾", "台湾自动选择",
         "日本", "日本自动选择", "新加坡", "新加坡自动选择", "美国", "美国自动选择",
@@ -188,7 +188,7 @@ const config = {
     },
     {
       name: "Twitter",
-      ...pr，
+      ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Twitter.png"
     },
     {
@@ -197,12 +197,12 @@ const config = {
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Panda.png"
     },
     {
-      name: "哔哩哔哩"，
+      name: "哔哩哔哩",
       ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"
     },
     {
-      name: "哔哩东南亚"，
+      name: "哔哩东南亚",
       ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"
     },
@@ -212,8 +212,8 @@ const config = {
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bahamut.png"
     },
     {
-      name: "YouTube"，
-      ...pr，
+      name: "YouTube",
+      ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/YouTube.png"
     },
     {
@@ -222,12 +222,12 @@ const config = {
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Netflix.png"
     },
     {
-      name: "Spotify"，
+      name: "Spotify",
       ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Spotify.png"
     },
     {
-      name: "国内"，
+      name: "国内",
       type: "select",
       proxies: [
         "直连", "默认", "香港", "香港自动选择", "台湾", "台湾自动选择",
@@ -251,7 +251,7 @@ const config = {
     },
     {
       name: "台湾",
-      输入: "select",
+      type: "select",
       "include-all": true,
       filter: "(?i)(?!直连)(台|tw|taiwan)",
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"
@@ -272,7 +272,7 @@ const config = {
     },
     {
       name: "英国",
-      输入: "select",
+      type: "select",
       "include-all": true,
       filter: "(?i)(?!直连)(英|uk|unitedkingdom|united kingdom)",
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/UK.png"
@@ -297,7 +297,7 @@ const config = {
       "include-all": true,
       tolerance: 10,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Auto.png"
-    }，
+    },
     {
       name: "全部节点",
       type: "select",
@@ -306,7 +306,7 @@ const config = {
     },
     {
       name: "香港自动选择",
-      输入: "url-test",
+      type: "url-test",
       "include-all": true,
       filter: "(?i)(?!直连)(港|hk|hongkong|hong kong)",
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/HK.png"
