@@ -38,9 +38,9 @@ const config = {
   "proxy-providers": {
     "润": {
       ...p,
-      url: "", // 请在此处填写订阅链接
-      override: { "additional-suffix": "[run]" }// 覆盖节点内容(additional-suffix在节点名称后增加固定后缀 additional-prefix在节点名称前增加固定前缀)
-    }
+      url: ""， // 请在此处填写订阅链接
+      override: { "additional-suffix": "[run]" }
+    }，
   },
   ipv6: true,
   "allow-lan": false,
@@ -63,10 +63,10 @@ const config = {
       "+.lan",
       "+.local",
       "time.*.com",
-      "ntp.*.com"，
+      "ntp.*.com",
       "connect.rom.miui.com",
-      "+.miwifi.com",
-      "+.ntp.org",
+      "+.miwifi.com"，
+      "+.ntp.org"，
       "+.market.xiaomi.com",
       // QQ
       "localhost.ptlogin2.qq.com",
@@ -78,7 +78,7 @@ const config = {
       // Windows
       "time.windows.com",
       "+.msftconnecttest.com",
-      "+.msftncsi.com"，
+      "+.msftncsi.com",
       "+.wpsmail.net",
       "+.henzanapp.com",
       "+.pconline.com.cn"
@@ -183,7 +183,7 @@ const config = {
     },
     {
       name: "Telegram",
-      ...pr，
+      ...pr,
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Telegram.png"
     },
     {
@@ -313,7 +313,7 @@ const config = {
     },
     {
       name: "台湾自动选择",
-      输入: "url-test",
+      type: "url-test",
       "include-all": true,
       filter: "(?i)(?!直连)(台|tw|taiwan)",
       icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TW.png"
@@ -348,6 +348,7 @@ const config = {
     }
   ],
   rules: [
+    "DOMAIN-SUFFIX,xbiquzw.net,DIRECT",
     "GEOSITE,category-ads-all,REJECT",
     "RULE-SET,anti-AD,REJECT",
     "RULE-SET,秋风广告规则,REJECT",
