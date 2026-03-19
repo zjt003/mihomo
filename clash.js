@@ -39,7 +39,7 @@ const config = {
     "润": {
       ...p,
       url: ""， // 请在此处填写订阅链接
-      override: { "additional-suffix": "[run]" }
+      override: { "additional-suffix": "[run]" }// 覆盖节点内容(additional-suffix在节点名称后增加固定后缀 additional-prefix在节点名称前增加固定前缀)
     }，
   },
   ipv6: true,
@@ -61,7 +61,7 @@ const config = {
     "fake-ip-filter": [
       "*",
       "+.lan",
-      "+.local",
+      "+.local"，
       "time.*.com",
       "ntp.*.com",
       "connect.rom.miui.com",
@@ -126,7 +126,7 @@ const config = {
       HTTP: {
         ports: [80, 8180-8880],
         "override-destination": true
-      },
+      }，
       TLS: {
         ports: [443, 8443]
       },
@@ -348,7 +348,6 @@ const config = {
     }
   ],
   rules: [
-    "DOMAIN-SUFFIX,xbiquzw.net,DIRECT",
     "GEOSITE,category-ads-all,REJECT",
     "RULE-SET,anti-AD,REJECT",
     "RULE-SET,秋风广告规则,REJECT",
