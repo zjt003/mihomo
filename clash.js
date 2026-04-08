@@ -63,7 +63,7 @@ const config = {
       "+.lan",
       "+.local",
       "time.*.com",
-      "ntp.*.com",
+      "ntp.*.com"，
       "connect.rom.miui.com",
       "+.miwifi.com",
       "+.ntp.org",
@@ -78,30 +78,30 @@ const config = {
       // Windows
       "time.windows.com",
       "+.msftconnecttest.com",
-      "+.msftncsi.com",
+      "+.msftncsi.com"，
       "+.wpsmail.net",
       "+.henzanapp.com",
       "+.pconline.com.cn"
     ],
     "default-nameserver": [
-      "119.29.29.29",
-      "223.5.5.5"
+      "223.5.5.5",
+      "119.29.29.29"
     ],
     nameserver: [
-      "https://doh.pub/dns-query",
-      "https://dns.alidns.com/dns-query"
+      "https://dns.alidns.com/dns-query",
+      "https://doh.pub/dns-query"
     ],
     "direct-nameserver": [
-      "https://doh.pub/dns-query",
-      "https://dns.alidns.com/dns-query"
+      "https://dns.alidns.com/dns-query",
+      "https://doh.pub/dns-query"
     ],
     "proxy-server-nameserver": [
-      "https://doh.pub/dns-query",
-      "https://dns.alidns.com/dns-query"
+      "https://dns.alidns.com/dns-query",
+      "https://doh.pub/dns-query"
     ],
     fallback: [
-      "https://dns.google/dns-query",
-      "https://cloudflare-dns.com/dns-query"
+      "https://cloudflare-dns.com/dns-query",
+      "https://dns.google/dns-query"
     ],
     "fallback-filter": {
       geoip: true,
