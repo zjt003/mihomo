@@ -63,7 +63,7 @@ const config = {
       "+.lan",
       "+.local",
       "time.*.com",
-      "ntp.*.com"，
+      "ntp.*.com",
       "connect.rom.miui.com",
       "+.miwifi.com",
       "+.ntp.org",
@@ -78,8 +78,8 @@ const config = {
       // Windows
       "time.windows.com",
       "+.msftconnecttest.com",
-      "+.msftncsi.com"，
-      "+.wpsmail.net",
+      "+.msftncsi.com",
+      "+.wpsmail.net"，
       "+.henzanapp.com",
       "+.pconline.com.cn"
     ],
@@ -88,7 +88,7 @@ const config = {
       "119.29.29.29"
     ],
     nameserver: [
-      "https://dns.alidns.com/dns-query",
+      "https://dns.alidns.com/dns-query"，
       "https://doh.pub/dns-query"
     ],
     "direct-nameserver": [
