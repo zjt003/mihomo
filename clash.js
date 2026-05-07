@@ -66,7 +66,7 @@ const config = {
       "ntp.*.com",
       "connect.rom.miui.com",
       "+.miwifi.com",
-      "+.ntp.org",
+      "+.ntp.org"，
       "+.market.xiaomi.com",
       // QQ
       "localhost.ptlogin2.qq.com",
@@ -84,8 +84,8 @@ const config = {
       "+.pconline.com.cn"
     ],
     "default-nameserver": [
-      "223.5.5.5",
-      "119.29.29.29"
+      "https://223.5.5.5/dns-query"，
+      "https://119.29.29.29/dns-query"
     ],
     nameserver: [
       "https://dns.alidns.com/dns-query",
