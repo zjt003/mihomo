@@ -61,7 +61,7 @@ const config = {
     "fake-ip-filter": [
       "*",
       "+.lan",
-      "+.local"，
+      "+.local",
       "time.*.com",
       "ntp.*.com",
       "connect.rom.miui.com",
