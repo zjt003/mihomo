@@ -61,12 +61,12 @@ const config = {
     "fake-ip-filter": [
       "*",
       "+.lan",
-      "+.local",
+      "+.local"，
       "time.*.com",
       "ntp.*.com",
       "connect.rom.miui.com",
       "+.miwifi.com",
-      "+.ntp.org"，
+      "+.ntp.org",
       "+.market.xiaomi.com",
       // QQ
       "localhost.ptlogin2.qq.com",
@@ -84,7 +84,7 @@ const config = {
       "+.pconline.com.cn"
     ],
     "default-nameserver": [
-      "https://223.5.5.5/dns-query"，
+      "https://223.5.5.5/dns-query",
       "https://119.29.29.29/dns-query"
     ],
     nameserver: [
