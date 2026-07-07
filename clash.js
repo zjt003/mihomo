@@ -59,7 +59,6 @@ const config = {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "28.0.0.1/8",
     "fake-ip-filter": [
-      "*",
       "+.lan",
       "+.local",
       "time.*.com",
@@ -88,8 +87,8 @@ const config = {
       "https://119.29.29.29/dns-query"
     ],
     nameserver: [
-      "https://dns.alidns.com/dns-query",
-      "https://doh.pub/dns-query"
+      "https://cloudflare-dns.com/dns-query",
+      "https://dns.google/dns-query"
     ],
     "direct-nameserver": [
       "https://dns.alidns.com/dns-query",
@@ -103,6 +102,16 @@ const config = {
       "https://cloudflare-dns.com/dns-query",
       "https://dns.google/dns-query"
     ],
+    "nameserver-policy": {
+      "geosite:cn,private": [
+        "https://dns.alidns.com/dns-query",
+        "https://doh.pub/dns-query"
+      ],
+      "geosite:geolocation-!cn": [
+        "https://cloudflare-dns.com/dns-query",
+        "https://dns.google/dns-query"
+      ]
+    },
     "fallback-filter": {
       geoip: true,
       "geoip-code": "CN",
