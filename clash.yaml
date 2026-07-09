@@ -48,27 +48,27 @@ dns:
     - "+.henzanapp.com"
     - "+.pconline.com.cn"
   default-nameserver:
-    - https://223.5.5.5/dns-query
-    - https://119.29.29.29/dns-query
+    - 223.5.5.5
+    - 119.29.29.29
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
+    - dns.alidns.com
+    - dot.pub
   direct-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - dns.alidns.com
+    - dot.pub
   proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - dns.alidns.com
+    - dot.pub
   fallback:
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
+    - dns.cloudflare.com
+    - dns.google
   nameserver-policy:
-    "geosite:cn,private":
-      - https://dns.alidns.com/dns-query
-      - https://doh.pub/dns-query
-    "geosite:geolocation-!cn":
-      - https://dns.google/dns-query
-      - https://cloudflare-dns.com/dns-query
+    geosite:cn,private:
+      - dns.alidns.com
+      - dot.pub
+    geosite:geolocation-!cn:
+      - dns.cloudflare.com
+      - dns.google
   fallback-filter:
     geoip: true
     geoip-code: CN
