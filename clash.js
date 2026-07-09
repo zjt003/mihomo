@@ -83,33 +83,33 @@ const config = {
       "+.pconline.com.cn"
     ],
     "default-nameserver": [
-      "https://223.5.5.5/dns-query",
-      "https://119.29.29.29/dns-query"
+      "223.5.5.5",
+      "119.29.29.29"
     ],
     nameserver: [
-      "https://cloudflare-dns.com/dns-query",
-      "https://dns.google/dns-query"
+      "dns.alidns.com",
+      "dns.google"
     ],
     "direct-nameserver": [
-      "https://dns.alidns.com/dns-query",
-      "https://doh.pub/dns-query"
+      "dns.alidns.com",
+      "dot.pub"
     ],
     "proxy-server-nameserver": [
-      "https://dns.alidns.com/dns-query",
-      "https://doh.pub/dns-query"
+      "dns.alidns.com",
+      "dot.pub"
     ],
     fallback: [
-      "https://cloudflare-dns.com/dns-query",
-      "https://dns.google/dns-query"
+      "dns.cloudflare.com",
+      "dns.google"
     ],
     "nameserver-policy": {
       "geosite:cn,private": [
-        "https://dns.alidns.com/dns-query",
-        "https://doh.pub/dns-query"
+        "dns.alidns.com",
+        "dot.pub"
       ],
       "geosite:geolocation-!cn": [
-        "https://cloudflare-dns.com/dns-query",
-        "https://dns.google/dns-query"
+        "dns.cloudflare.com",
+        "dns.google"
       ]
     },
     "fallback-filter": {
